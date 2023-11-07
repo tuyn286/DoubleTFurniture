@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Product>
+	<sanpham>
+		<masanpham>1</masanpham>
+		<tensanpham>Ban tron</tensanpham>
+		<mota>Cho 2 nguoi ngoi</mota>
+		<gia>1500000</gia>
+		<mau>Do Den</mau>
+		<chatlieu>Go tu nhien</chatlieu>
+		<hinhanh>t-1.jpg</hinhanh>
+		<madanhmuc>1</madanhmuc>
+	</sanpham>
+	<sanpham>
+		<masanpham>2</masanpham>
+		<tensanpham>Ban tron</tensanpham>
+		<mota>Cho 2 nguoi ngoi</mota>
+		<gia>1500000</gia>
+		<mau>Do Den</mau>
+		<chatlieu>Go tu nhien</chatlieu>
+		<hinhanh>t-2.jpg</hinhanh>
+		<madanhmuc>1</madanhmuc>
+	</sanpham>
+	<sanpham>
+		<masanpham>3</masanpham>
+		<tensanpham>Ban tron</tensanpham>
+		<mota>Cho 2 nguoi ngoi</mota>
+		<gia>1500000</gia>
+		<mau>Do Den</mau>
+		<chatlieu>Go tu nhien</chatlieu>
+		<hinhanh>t-3.jpg</hinhanh>
+		<madanhmuc>1</madanhmuc>
+	</sanpham>
+	<sanpham>
+		<masanpham>4</masanpham>
+		<tensanpham>Ban tron</tensanpham>
+		<mota>Cho 2 nguoi ngoi</mota>
+		<gia>1500000</gia>
+		<mau>Do Den</mau>
+		<chatlieu>Go tu nhien</chatlieu>
+		<hinhanh>t-3.jpg</hinhanh>
+		<madanhmuc>1</madanhmuc>
+	</sanpham>
+	<sanpham>
+		<masanpham>5</masanpham>
+		<tensanpham>Ban tron</tensanpham>
+		<mota>Cho 2 nguoi ngoi</mota>
+		<gia>1500000</gia>
+		<mau>Do Den</mau>
+		<chatlieu>Go tu nhien</chatlieu>
+		<hinhanh>t-3.jpg</hinhanh>
+		<madanhmuc>1</madanhmuc>
+	</sanpham>
+	<sanpham>
+		<masanpham>6</masanpham>
+		<tensanpham>Ban tron</tensanpham>
+		<mota>Cho 2 nguoi ngoi</mota>
+		<gia>1500000</gia>
+		<mau>Do Den</mau>
+		<chatlieu>Go tu nhien</chatlieu>
+		<hinhanh>t-3.jpg</hinhanh>
+		<madanhmuc>1</madanhmuc>
+	</sanpham>
+</Product>
