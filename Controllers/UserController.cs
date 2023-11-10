@@ -17,8 +17,8 @@ namespace DoubleTFurniture.Controllers
         {
             List<Category> categories = categoryDAO.getAll();
             List<Product> products = productDAO.getAll();
-            var data = new Tuple<List<Category>, List<Product>>(categories, products);
-            return View(data);
+            var prdcate = new Tuple<List<Category>, List<Product>>(categories, products);
+            return View(prdcate);
         }
         public ActionResult details(int masp)
         {
