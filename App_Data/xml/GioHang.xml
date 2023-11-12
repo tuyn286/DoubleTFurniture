@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<GioHangs>
+	<giohang>
+		<magiohang>1</magiohang>
+		<manguoidung>1</manguoidung>
+		<ngaytao>12/11/2023</ngaytao>
+		<giohangsanphams>
+			<giohangsanpham>
+				<maghsp>1</maghsp>
+				<masanpham>1</masanpham>
+				<magiohang>1</magiohang>
+				<soluong>1</soluong>
+			</giohangsanpham>
+			<giohangsanpham>
+				<maghsp>2</maghsp>
+				<masanpham>2</masanpham>
+				<magiohang>1</magiohang>
+				<soluong>1</soluong>
+			</giohangsanpham>
+			<giohangsanpham>
+				<maghsp>3</maghsp>
+				<masanpham>3</masanpham>
+				<magiohang>1</magiohang>
+				<soluong>1</soluong>
+			</giohangsanpham>
+		</giohangsanphams>
+	</giohang>
+</GioHangs>

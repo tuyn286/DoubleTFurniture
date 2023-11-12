@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NguoiDungs>
+	<nguoidung>
+		<manguoidung>1</manguoidung>
+		<tennguoidung>Nguyễn Hoàng Tuyên</tennguoidung>
+		<tendangnhap>htuyen</tendangnhap>
+		<matkhau>1234</matkhau>
+		<diachi>38 Bàu Vàng 2</diachi>
+	</nguoidung>
+	<nguoidung>
+		<manguoidung>2</manguoidung>
+		<tennguoidung>Đỗ Bá Thông</tennguoidung>
+		<tendangnhap>bthong</tendangnhap>
+		<matkhau>1234</matkhau>
+		<diachi>38/12 Thanh Sơn</diachi>
+	</nguoidung>
+</NguoiDungs>
