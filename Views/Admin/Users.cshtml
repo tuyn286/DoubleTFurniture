@@ -1,0 +1,64 @@
+﻿@model List<DoubleTFurniture.Models.User>
+@{
+    ViewBag.Title = "Users";
+    Layout = "~/Views/Shared/admin_layout.cshtml";
+}
+
+<div class="content-wrapper">
+    <div class="container">
+        <div class="row pad-botm">
+            <div class="col-md-12">
+                <h4 class="header-line">quản lý người dùng</h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Advanced Tables -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Sản phẩm
+                    </div>
+                    <div class="panel-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                <thead>
+                                    <tr>
+                                        <th>Mã người dùng</th>
+                                        <th>Tên người dùng</th>
+                                        <th>Tên đăng nhập</th>
+                                        <th>Mật khẩu</th>
+                                        <th>Địa chỉ</th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr class="gradeU">
+                                            <td>@item.manguoidung</td>
+                                            <td>@item.tennguoidung</td>
+                                            <td>@item.tendangnhap</td>
+                                            <td>@item.matkhau</td>
+                                            <td>@item.diachi</td>
+                                            <!-- Đường dẫn đến controller sửa sản phẩm -->
+                                            <td><a href="~/Admin/editUser?mand=@item.manguoidung">Sửa</a></td>
+                                            <!-- đường dẫn đến controller xóa sản phẩm -->
+                                            <td><a href="~/Admin/deleteUser?mand=@item.manguoidung">Xóa</a></td>
+                                        </tr>
+                                    }
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+                <!--End Advanced Tables -->
+            </div>
+        </div>
+
+    </div>
+</div>
+

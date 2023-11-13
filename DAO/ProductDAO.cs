@@ -3,16 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Xml;
+using System.Xml.Linq;
 using DoubleTFurniture.Models;
 
 namespace DoubleTFurniture.DAO
 {
     public class ProductDAO
     {
+        string path = "D:/xml/DoubleTFurniture/App_Data/xml/Product.xml";
         public XmlDocument document = new XmlDocument();
         public ProductDAO()
         {
-            document.Load("D:/xml/DoubleTFurniture/App_Data/xml/Product.xml");
+            document.Load(path);
         }
         public List<Product> getAll()
         {
@@ -52,6 +54,18 @@ namespace DoubleTFurniture.DAO
                 }
             }
             return product;
+        }
+        public void deleteProductById(int id)
+        {
+            XmlNodeList list = document.GetElementsByTagName("Product/sanpham");
+            foreach (XmlElement e in list)
+            {
+                if(Int32.Parse(e.ChildNodes[0].InnerText) == id)
+                {
+                    e.ParentNode.RemoveChild(e);
+                }
+            }
+            document.Save(path);
         }
     }
 }
