@@ -215,6 +215,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\User\Index.cshtml" />
     <Content Include="Views\User\details.cshtml" />
+    <Content Include="Views\User\loginForm.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

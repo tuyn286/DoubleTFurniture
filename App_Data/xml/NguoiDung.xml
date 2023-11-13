@@ -14,4 +14,11 @@
 		<matkhau>1234</matkhau>
 		<diachi>38/12 Thanh Sơn</diachi>
 	</nguoidung>
+	<nguoidung>
+		<manguoidung>3</manguoidung>
+		<tennguoidung>admin</tennguoidung>
+		<tendangnhap>admin</tendangnhap>
+		<matkhau>admin</matkhau>
+		<diachi></diachi>
+	</nguoidung>
 </NguoiDungs>
