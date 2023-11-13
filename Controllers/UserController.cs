@@ -12,6 +12,7 @@ namespace DoubleTFurniture.Controllers
     {
         CategoryDAO categoryDAO = new CategoryDAO();
         ProductDAO productDAO = new ProductDAO();
+        UserDAO userDAO = new UserDAO();
 
         public ActionResult Index()
         {
@@ -24,6 +25,42 @@ namespace DoubleTFurniture.Controllers
         {
             var sanpham = productDAO.getProductById(masp);
             return View(sanpham);
+        }
+        public ActionResult loginForm()
+        {
+            return View();
+        }
+        public ActionResult loginHandle(string username,string password)
+        {
+            string cred = userDAO.checkCredential(username, password);
+            if (cred.Equals("admin"))
+            {
+                HttpCookie cookie = new HttpCookie("loginKey");
+                cookie["key"] = cred;
+                Response.Cookies.Add(cookie);
+                return Redirect("~/Admin/index");
+            }else if (cred.Equals("none"))
+            {
+                return Redirect("~/User/Index");
+            }
+            else
+            {
+                HttpCookie cookie = new HttpCookie("loginKey");
+                cookie["key"] = cred;
+                Response.Cookies.Add(cookie);
+                return Redirect("~/User/Index");
+            }
+            return null;
+        }
+        public ActionResult cart()
+        {
+            HttpCookie httpCookie = Request.Cookies["loginKey"];
+            if(httpCookie != null)
+            {
+                string savedUsername = httpCookie["key"];
+
+            }
+            return Redirect("~/User/Index");
         }
     }
 }

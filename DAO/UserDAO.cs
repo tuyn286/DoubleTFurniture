@@ -19,9 +19,24 @@ namespace DoubleTFurniture.DAO
         {
             return null;
         }
-        public bool checkCredential(string username,string password)
+        public string checkCredential(string username,string password)
         {
-            return true;
+            XmlNodeList listUser = doc.GetElementsByTagName("nguoidung");
+            foreach(XmlElement e in listUser)
+            {
+                if(e.ChildNodes[2].InnerText.Equals(username) && e.ChildNodes[3].InnerText.Equals(password))
+                {
+                    if (username.Equals("admin"))
+                    {
+                        return "admin";
+                    }
+                    else
+                    {
+                        return e.ChildNodes[1].InnerText;
+                    }
+                }
+            }
+            return "none";
         }
     }
 }
