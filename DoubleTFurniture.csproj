@@ -135,6 +135,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\xml\Category.xml" />
+    <Content Include="App_Data\xml\GioHang.xml" />
+    <Content Include="App_Data\xml\NguoiDung.xml" />
     <Content Include="App_Data\xml\Product.xml" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
