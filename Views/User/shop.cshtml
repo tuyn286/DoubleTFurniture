@@ -1,0 +1,37 @@
+﻿﻿﻿@model List<DoubleTFurniture.Models.Product>
+@{
+    ViewBag.Title = "shop";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="brand_section">
+    <div class="container">
+        <div class="heading_container">
+            <h2>
+                Featured Brands
+            </h2>
+        </div>
+        <div class="brand_container layout_padding2">
+            @foreach (var item in Model)
+            {
+                <div class="box">
+                    <a href="~/User/details?masp=@item.masanpham">
+                        <div class="img-box">
+                            <img src="~/images/@item.hinhanh" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h6 class="price">
+                                $@item.gia
+                            </h6>
+                            <h6>
+                                @item.tensanpham
+                            </h6>
+                        </div>
+                    </a>
+                </div>
+
+            }
+        </div>
+
+    </div>
+</section>

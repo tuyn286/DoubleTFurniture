@@ -26,6 +26,14 @@ namespace DoubleTFurniture.Controllers
             var sanpham = productDAO.getProductById(masp);
             return View(sanpham);
         }
+        public ActionResult shop()
+        {
+            List<Product> products = productDAO.getAll();
+
+
+            return View(products);
+
+        }
         public ActionResult loginForm()
         {
             return View();
