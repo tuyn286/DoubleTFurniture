@@ -1,0 +1,64 @@
+﻿@model List<DoubleTFurniture.Models.Product>
+@{
+    ViewBag.Title = "Products";
+    Layout = "~/Views/Shared/admin_layout.cshtml";
+}
+
+<div class="content-wrapper">
+    <div class="container">
+        <div class="row pad-botm">
+            <div class="col-md-12">
+                <h4 class="header-line">QUẢN LÝ SẢN PHẨM</h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Advanced Tables -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a href="~/Admin/addProduct">Thêm sản phẩm</a>
+                    </div>
+                    <div class="panel-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                <thead>
+                                    <tr>
+                                        <th>Mã sản phẩm</th>
+                                        <th>Tên sản phẩm</th>
+                                        <th>Giá</th>
+                                        <th>Màu</th>
+                                        <th>Chất liệu</th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr class="gradeU">
+                                            <td>@item.masanpham</td>
+                                            <td>@item.tensanpham</td>
+                                            <td>@item.gia</td>
+                                            <td>@item.mau</td>
+                                            <td>@item.chatlieu</td>
+                                            <!-- Đường dẫn đến controller sửa sản phẩm -->
+                                            <td><a href="~/Admin/editProduct?masp=@item.masanpham">Sửa</a></td>
+                                            <!-- đường dẫn đến controller xóa sản phẩm -->
+                                            <td><a href="~/Admin/deleteProduct?masp=@item.masanpham">Xóa</a></td>
+                                        </tr>
+                                    }
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+                <!--End Advanced Tables -->
+            </div>
+        </div>
+
+    </div>
+</div>
+

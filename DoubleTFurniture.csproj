@@ -120,6 +120,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="DAO\CategoryDAO.cs" />
@@ -138,6 +139,23 @@
     <Content Include="App_Data\xml\GioHang.xml" />
     <Content Include="App_Data\xml\NguoiDung.xml" />
     <Content Include="App_Data\xml\Product.xml" />
+    <Content Include="assets\css\bootstrap.css" />
+    <Content Include="assets\css\font-awesome.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\img\1.jpg" />
+    <Content Include="assets\img\2.jpg" />
+    <Content Include="assets\img\3.jpg" />
+    <Content Include="assets\img\logo.png" />
+    <Content Include="assets\img\user.gif" />
+    <Content Include="assets\img\user2.png" />
+    <Content Include="assets\js\bootstrap.js" />
+    <Content Include="assets\js\custom.js" />
+    <Content Include="assets\js\dataTables\dataTables.bootstrap.css" />
+    <Content Include="assets\js\dataTables\dataTables.bootstrap.js" />
+    <Content Include="assets\js\dataTables\jquery.dataTables.js" />
+    <Content Include="assets\js\jquery-1.10.2.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -188,6 +206,13 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\style.css.map" />
     <Content Include="Content\style.scss" />
+    <Content Include="assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\fonts\FontAwesome.otf" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.woff" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -216,6 +241,12 @@
     <Content Include="Views\User\Index.cshtml" />
     <Content Include="Views\User\details.cshtml" />
     <Content Include="Views\User\loginForm.cshtml" />
+    <Content Include="Views\Shared\admin_layout.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Admin\Products.cshtml" />
+    <Content Include="Views\Admin\Users.cshtml" />
+    <Content Include="Views\Admin\editProduct.cshtml" />
+    <Content Include="Views\Admin\addProduct.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

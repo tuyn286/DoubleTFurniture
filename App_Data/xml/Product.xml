@@ -1,63 +1,73 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Product>
-	<sanpham>
-		<masanpham>1</masanpham>
-		<tensanpham>Ban tron</tensanpham>
-		<mota>Cho 2 nguoi ngoi</mota>
-		<gia>1500000</gia>
-		<mau>Do Den</mau>
-		<chatlieu>Go tu nhien</chatlieu>
-		<hinhanh>t-1.jpg</hinhanh>
-		<madanhmuc>1</madanhmuc>
-	</sanpham>
-	<sanpham>
-		<masanpham>2</masanpham>
-		<tensanpham>Ban tron</tensanpham>
-		<mota>Cho 2 nguoi ngoi</mota>
-		<gia>1500000</gia>
-		<mau>Do Den</mau>
-		<chatlieu>Go tu nhien</chatlieu>
-		<hinhanh>t-2.jpg</hinhanh>
-		<madanhmuc>1</madanhmuc>
-	</sanpham>
-	<sanpham>
-		<masanpham>3</masanpham>
-		<tensanpham>Ban tron</tensanpham>
-		<mota>Cho 2 nguoi ngoi</mota>
-		<gia>1500000</gia>
-		<mau>Do Den</mau>
-		<chatlieu>Go tu nhien</chatlieu>
-		<hinhanh>t-3.jpg</hinhanh>
-		<madanhmuc>1</madanhmuc>
-	</sanpham>
-	<sanpham>
-		<masanpham>4</masanpham>
-		<tensanpham>Ban tron</tensanpham>
-		<mota>Cho 2 nguoi ngoi</mota>
-		<gia>1500000</gia>
-		<mau>Do Den</mau>
-		<chatlieu>Go tu nhien</chatlieu>
-		<hinhanh>t-3.jpg</hinhanh>
-		<madanhmuc>1</madanhmuc>
-	</sanpham>
-	<sanpham>
-		<masanpham>5</masanpham>
-		<tensanpham>Ban tron</tensanpham>
-		<mota>Cho 2 nguoi ngoi</mota>
-		<gia>1500000</gia>
-		<mau>Do Den</mau>
-		<chatlieu>Go tu nhien</chatlieu>
-		<hinhanh>t-3.jpg</hinhanh>
-		<madanhmuc>1</madanhmuc>
-	</sanpham>
-	<sanpham>
-		<masanpham>6</masanpham>
-		<tensanpham>Ban tron</tensanpham>
-		<mota>Cho 2 nguoi ngoi</mota>
-		<gia>1500000</gia>
-		<mau>Do Den</mau>
-		<chatlieu>Go tu nhien</chatlieu>
-		<hinhanh>t-3.jpg</hinhanh>
-		<madanhmuc>1</madanhmuc>
-	</sanpham>
+  <sanpham>
+    <masanpham>1</masanpham>
+    <tensanpham>Ban tron</tensanpham>
+    <mota>Cho 2 nguoi ngoi</mota>
+    <gia>1500000</gia>
+    <mau>Do Den</mau>
+    <chatlieu>Go tu nhien</chatlieu>
+    <hinhanh>t-1.jpg</hinhanh>
+    <madanhmuc>1</madanhmuc>
+  </sanpham>
+  <sanpham>
+    <masanpham>2</masanpham>
+    <tensanpham>Ban tron</tensanpham>
+    <mota>Cho 2 nguoi ngoi</mota>
+    <gia>1500000</gia>
+    <mau>Do Den</mau>
+    <chatlieu>Go tu nhien</chatlieu>
+    <hinhanh>t-2.jpg</hinhanh>
+    <madanhmuc>1</madanhmuc>
+  </sanpham>
+  <sanpham>
+    <masanpham>3</masanpham>
+    <tensanpham>Ban tron</tensanpham>
+    <mota>Cho 2 nguoi ngoi</mota>
+    <gia>1500000</gia>
+    <mau>Do Den</mau>
+    <chatlieu>Go tu nhien</chatlieu>
+    <hinhanh>t-3.jpg</hinhanh>
+    <madanhmuc>1</madanhmuc>
+  </sanpham>
+  <sanpham>
+    <masanpham>4</masanpham>
+    <tensanpham>Ban tron</tensanpham>
+    <mota>Cho 2 nguoi ngoi</mota>
+    <gia>1500000</gia>
+    <mau>Do Den</mau>
+    <chatlieu>Go tu nhien</chatlieu>
+    <hinhanh>t-3.jpg</hinhanh>
+    <madanhmuc>1</madanhmuc>
+  </sanpham>
+  <sanpham>
+    <masanpham>5</masanpham>
+    <tensanpham>Ban tron</tensanpham>
+    <mota>Cho 2 nguoi ngoi</mota>
+    <gia>1500000</gia>
+    <mau>Do Den</mau>
+    <chatlieu>Go tu nhien</chatlieu>
+    <hinhanh>t-3.jpg</hinhanh>
+    <madanhmuc>1</madanhmuc>
+  </sanpham>
+  <sanpham>
+    <masanpham>6</masanpham>
+    <tensanpham>Bàn gỗ tứ linh </tensanpham>
+    <mota>Thích hợp để uống trà</mota>
+    <gia>500000000</gia>
+    <mau>Nâu</mau>
+    <chatlieu>Gỗ thiên nhiên</chatlieu>
+    <hinhanh>i-2.jpg</hinhanh>
+    <madanhmuc>2</madanhmuc>
+  </sanpham>
+  <sanpham>
+    <masanpham>7</masanpham>
+    <tensanpham>Ban tron</tensanpham>
+    <mota>Cho 2 nguoi ngoi</mota>
+    <gia>1500000</gia>
+    <mau>Do Den</mau>
+    <chatlieu>Go tu nhien</chatlieu>
+    <hinhanh>wallpaperflare.com_wallpaper.jpg</hinhanh>
+    <madanhmuc>1</madanhmuc>
+  </sanpham>
 </Product>
