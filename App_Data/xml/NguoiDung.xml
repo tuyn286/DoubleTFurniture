@@ -1,18 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<NguoiDungs>
+<NguoiDung>
   <nguoidung>
-    <manguoidung>1</manguoidung>
-    <tennguoidung>Nguyễn Hoàng Tuyên</tennguoidung>
-    <tendangnhap>htuyen</tendangnhap>
-    <matkhau>1234</matkhau>
-    <diachi>38 Bàu Vàng 2</diachi>
+    <manguoidung>10</manguoidung>
+    <tennguoidung>tuyen</tennguoidung>
+    <tendangnhap>tuyen</tendangnhap>
+    <matkhau>tuyen</matkhau>
+    <diachi>bauvang2</diachi>
   </nguoidung>
   <nguoidung>
-    <manguoidung>3</manguoidung>
-    <tennguoidung>admin</tennguoidung>
-    <tendangnhap>admin</tendangnhap>
-    <matkhau>admin</matkhau>
-    <diachi>
-    </diachi>
+    <manguoidung>0</manguoidung>
+    <tennguoidung>sdfsdf</tennguoidung>
+    <tendangnhap>sdfsdf</tendangnhap>
+    <matkhau>789987</matkhau>
+    <diachi>sdfsdf</diachi>
   </nguoidung>
-</NguoiDungs>
+</NguoiDung>
