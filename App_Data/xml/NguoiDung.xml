@@ -1,18 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<NguoiDungs>
+<NguoiDung>
   <nguoidung>
     <manguoidung>1</manguoidung>
-    <tennguoidung>Nguyễn Hoàng Tuyên</tennguoidung>
-    <tendangnhap>htuyen</tendangnhap>
+    <tennguoidung>Admin</tennguoidung>
+    <tendangnhap>admin</tendangnhap>
     <matkhau>1234</matkhau>
-    <diachi>38 Bàu Vàng 2</diachi>
+    <diachi></diachi>
   </nguoidung>
   <nguoidung>
-    <manguoidung>3</manguoidung>
-    <tennguoidung>admin</tennguoidung>
-    <tendangnhap>admin</tendangnhap>
-    <matkhau>admin</matkhau>
-    <diachi>
-    </diachi>
+    <manguoidung>2</manguoidung>
+    <tennguoidung>Nguyen Hoang Tuyen</tennguoidung>
+    <tendangnhap>tuyen</tendangnhap>
+    <matkhau>1234</matkhau>
+    <diachi>38 Bàu Vàng 2, Hòa Khánh</diachi>
   </nguoidung>
-</NguoiDungs>
+	<nguoidung>
+		<manguoidung>3</manguoidung>
+		<tennguoidung>Do Ba Thong</tennguoidung>
+		<tendangnhap>bthong</tendangnhap>
+		<matkhau>1234</matkhau>
+		<diachi>Thanh Sơn, Hải Châu</diachi>
+	</nguoidung>
+	<nguoidung>
+		<manguoidung>4</manguoidung>
+		<tennguoidung>Nguyen Van A</tennguoidung>
+		<tendangnhap>nva</tendangnhap>
+		<matkhau>1234</matkhau>
+		<diachi>Ông Ích Khiêm, Hải Châu</diachi>
+	</nguoidung>
+</NguoiDung>

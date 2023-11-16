@@ -2,11 +2,11 @@
 <Category>
 	<danhmuc>
 		<madanhmuc>1</madanhmuc>
-		<tendanhmuc>Ban</tendanhmuc>
+		<tendanhmuc>Bàn ăn</tendanhmuc>
 	</danhmuc>
 	<danhmuc>
 		<madanhmuc>2</madanhmuc>
-		<tendanhmuc>Ghe</tendanhmuc>
+		<tendanhmuc>Ghế ngồi</tendanhmuc>
 	</danhmuc>
 	<danhmuc>
 		<madanhmuc>3</madanhmuc>
@@ -14,6 +14,6 @@
 	</danhmuc>
 	<danhmuc>
 		<madanhmuc>4</madanhmuc>
-		<tendanhmuc>Nem</tendanhmuc>
+		<tendanhmuc>Giường nệm</tendanhmuc>
 	</danhmuc>
 </Category>

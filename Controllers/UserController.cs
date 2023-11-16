@@ -13,6 +13,7 @@ namespace DoubleTFurniture.Controllers
         CategoryDAO categoryDAO = new CategoryDAO();
         ProductDAO productDAO = new ProductDAO();
         UserDAO userDAO = new UserDAO();
+        CartDAO cartDAO = new CartDAO();
 
         public ActionResult Index()
         {
@@ -26,6 +27,14 @@ namespace DoubleTFurniture.Controllers
             var sanpham = productDAO.getProductById(masp);
             return View(sanpham);
         }
+        public ActionResult shop()
+        {
+            List<Product> products = productDAO.getAll();
+
+
+            return View(products);
+
+        }
         public ActionResult loginForm()
         {
             return View();
@@ -36,7 +45,7 @@ namespace DoubleTFurniture.Controllers
             if (cred.Equals("admin"))
             {
                 HttpCookie cookie = new HttpCookie("loginKey");
-                cookie["key"] = cred;
+                cookie.Value = cred;
                 Response.Cookies.Add(cookie);
                 return Redirect("~/Admin/index");
             }else if (cred.Equals("none"))
@@ -46,21 +55,42 @@ namespace DoubleTFurniture.Controllers
             else
             {
                 HttpCookie cookie = new HttpCookie("loginKey");
-                cookie["key"] = cred;
+                cookie.Value = cred;
                 Response.Cookies.Add(cookie);
                 return Redirect("~/User/Index");
             }
-            return null;
         }
         public ActionResult cart()
         {
-            HttpCookie httpCookie = Request.Cookies["loginKey"];
-            if(httpCookie != null)
+            List<Product> products = new List<Product>();
+            string savedUsername = Request.Cookies["loginKey"]?.Value;
+            if(savedUsername != null)
             {
-                string savedUsername = httpCookie["key"];
-
+                products = cartDAO.getProducts(savedUsername);
+            } 
+            return View(products);
+        }
+        public ActionResult logOut()
+        {
+            if (Request.Cookies["loginKey"] != null)
+            {
+                Response.Cookies["loginKey"].Expires = DateTime.Now.AddDays(-1);
             }
-            return Redirect("~/User/Index");
+            return Redirect("~/User/index");
+        }
+
+        public ActionResult deleteProCart(int masp)
+        {
+            string savedUsername = Request.Cookies["loginKey"]?.Value;
+            cartDAO.deleteProduct(masp, savedUsername);
+            return Redirect("~/User/cart");
+        }
+
+        public ActionResult addProCart(int masp)
+        {
+            string savedUsername = Request.Cookies["loginKey"]?.Value;
+            cartDAO.addProduct(masp, savedUsername);
+            return Redirect("~/User/shop");
         }
     }
 }

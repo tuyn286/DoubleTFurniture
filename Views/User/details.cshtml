@@ -1,6 +1,42 @@
-﻿@model DoubleTFurniture.Models.Product
+﻿﻿﻿@model DoubleTFurniture.Models.Product
 @{
-    ViewBag.Title = "details";
+    ViewBag.Title = "shop";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Ma san pham chi tiet la: @Model.masanpham</h2>
+
+<section class="about_section layout_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="img-box">
+                    <img src="~/images/@Model.hinhanh" alt="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="detail-box">
+                    <div class="heading_container">
+                        <h2>
+                            @Model.tensanpham
+                        </h2>
+                    </div>
+
+                    <h4 style="color: red;margin-bottom: 70px;">@Model.gia</h4>
+                    <p>
+                       @Model.mota
+                    </p>
+                    <p>
+                        @Model.mau
+                    </p>
+                    <p>
+                        @Model.chatlieu
+                    </p>
+                    <a href="~/User/addProCart?masp=@Model.masanpham">
+                        Thêm vào giỏ hàng
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

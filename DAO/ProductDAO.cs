@@ -64,6 +64,7 @@ namespace DoubleTFurniture.DAO
                 if (Int32.Parse(e.ChildNodes[0].InnerText) == id)
                 {
                     e.ParentNode.RemoveChild(e);
+                    continue;
                 }
             }
             document.Save(path);

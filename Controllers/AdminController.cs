@@ -33,23 +33,23 @@ namespace DoubleTFurniture.Controllers
             List<User> list = userDAO.getAll();
             return View(list);
         }
-        public ActionResult deleteProduct(int masp)
+        //public ActionResult editUser(int mand)
+        //{
+        //    User user = userDAO.getUserById(mand);
+        //    List<User> list = userDAO.getAll();
+        //    return 
+
+        //}
+        public ActionResult addUser()
         {
-            productDAO.deleteProductById(masp);
-            return Redirect("~/Admin/Products");
+            List<User> user = userDAO.getAll();
+            return View(user);
         }
-        public ActionResult editProduct(int masp)
+        public ActionResult addUserHandle(User user)
         {
-            Product product = productDAO.getProductById(masp);
-            List<Category> categories = categoryDAO.getAll();
-            var data = new Tuple<Product, List<Category>>(product, categories);
-            return View(data);
-        }
-        public ActionResult editProductHandle(Product product, HttpPostedFileBase hinhanh)
-        {
-            product.hinhanh = this.upload(hinhanh);
-            productDAO.editProduct(product);
-            return Redirect("~/Admin/Products");
+            userDAO.addUser(user);
+
+            return Redirect("~/Admin/Users");
         }
         public ActionResult addProduct()
         {
@@ -62,6 +62,42 @@ namespace DoubleTFurniture.Controllers
             productDAO.addProduct(product);
             return Redirect("~/Admin/Products");
         }
+          public ActionResult deleteProduct(int masp)
+        {
+            productDAO.deleteProductById(masp);
+            return Redirect("~/Admin/Products");
+        }
+
+
+        public ActionResult editUser(int mand)
+        {
+            User user = userDAO.getUserById(mand);
+
+            return View(user);
+
+        }
+        public ActionResult editUserHandle( User user)
+        {
+
+            userDAO.editUser(user);
+            return Redirect("~/Admin/Users");
+        }
+        public ActionResult editProduct(int masp)
+        {
+            Product product = productDAO.getProductById(masp);
+            List<Category> categories = categoryDAO.getAll();
+            var data = new Tuple<Product, List<Category>>(product, categories);
+            return View(data);
+        }
+      
+        public ActionResult editProductHandle(Product product, HttpPostedFileBase hinhanh)
+        {
+            product.hinhanh = this.upload(hinhanh);
+            productDAO.editProduct(product);
+            return Redirect("~/Admin/Products");
+        }
+       
+        
         public ActionResult deleteUser(int mand)
         {
             userDAO.deleteUsertById(mand);
@@ -78,5 +114,6 @@ namespace DoubleTFurniture.Controllers
             }
             return urlImage;
         }
+        
     }
 }

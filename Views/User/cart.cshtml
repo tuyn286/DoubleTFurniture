@@ -1,0 +1,57 @@
+﻿@model List<DoubleTFurniture.Models.Product>
+@{
+    ViewBag.Title = "cart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="about_section layout_padding">
+    <div class="container">
+        <div class="heading_container" style="margin-bottom: 50px;">
+            <h2>
+                Giỏ hàng của tôi
+            </h2>
+        </div>
+        @{int tongtien=0; }
+        @foreach (var item in Model)
+        {
+            <div class="row" style="border-bottom: 1px solid black;padding:15px 0 15px 0">
+                <div class="col-md-2">
+                    <div class="img-box">
+                        <img src="~/images/@item.hinhanh" alt="">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    @item.tensanpham
+                </div>
+                <div class="col-md-2">
+                    @item.mau
+                </div>
+                <div class="col-md-2">
+                    @item.chatlieu
+                </div>
+                <div class="col-md-2">
+                    @item.gia
+                </div>
+                <div class="col-md-2">
+                    <a href="~/User/deleteProCart?masp=@item.masanpham">Xóa</a>
+                </div>
+            </div>
+            tongtien += item.gia;
+        }
+
+        <div class="row" style="margin-top: 80px;">
+            <div class="col-md-8">
+                <h4 style="padding-left: 150px;">Tổng tiền: @tongtien</h4>
+            </div>
+            <div class="col-md-4">
+                <div class="detail-box">
+                    <a href="" style="margin-top: 0px;">
+                        Thanh toán
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+

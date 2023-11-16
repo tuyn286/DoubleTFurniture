@@ -54,7 +54,7 @@ namespace DoubleTFurniture.DAO
         }
         public void deleteUsertById(int id)
         {
-            XmlNodeList list = doc.SelectNodes("NguoiDungs/nguoidung");
+            XmlNodeList list = doc.SelectNodes("NguoiDung/nguoidung");
             foreach (XmlElement e in list)
             {
                 if (Int32.Parse(e.ChildNodes[0].InnerText) == id)
@@ -63,6 +63,85 @@ namespace DoubleTFurniture.DAO
                 }
             }
             doc.Save(path);
+        }
+        public User getUserById(int id)
+        {
+            User user = new User();
+            XmlNodeList list = doc.GetElementsByTagName("manguoidung");
+            foreach(XmlElement e in list)
+            {
+                if(Int32.Parse(e.InnerText) == id)
+                {
+                    user.manguoidung= Int32.Parse(e.ParentNode.ChildNodes[0].InnerText);
+                    user.matkhau= e.ParentNode.ChildNodes[2].InnerText; 
+                    user.tendangnhap = e.ParentNode.ChildNodes[2].InnerText;
+                    user.tennguoidung = e.ParentNode.ChildNodes[2].InnerText;
+                    user.diachi = e.ParentNode.ChildNodes[2].InnerText; ;
+                }
+            }
+            return user;
+            
+        }
+        public void addUser(User user)
+        {
+            XmlElement nguoidung = doc.CreateElement("nguoidung");
+
+            XmlElement manguoidung = doc.CreateElement("manguoidung");
+            manguoidung.InnerText = user.manguoidung.ToString();
+            nguoidung.AppendChild(manguoidung);
+
+            XmlElement tennguoidung = doc.CreateElement("tennguoidung");
+            tennguoidung.InnerText = user.tennguoidung.ToString();
+            nguoidung.AppendChild(tennguoidung);
+
+            XmlElement tendangnhap = doc.CreateElement("tendangnhap");
+            tendangnhap.InnerText = user.tendangnhap.ToString();
+            nguoidung.AppendChild(tendangnhap);
+
+            XmlElement matkhau = doc.CreateElement("matkhau");
+            matkhau.InnerText = user.matkhau.ToString();
+            nguoidung.AppendChild(matkhau);
+
+            XmlElement diachi = doc.CreateElement("diachi");
+            diachi.InnerText = user.diachi.ToString();
+            nguoidung.AppendChild(diachi);
+
+            XmlNode root = doc.SelectSingleNode("/NguoiDung");
+            root.AppendChild(nguoidung);
+            doc.Save(path);
+
+
+
+            
+
+        }
+        public void editUser(User user)
+        {
+            XmlNodeList list = doc.SelectNodes("NguoiDung/nguoidung");
+            foreach(XmlElement e in list)
+            {
+                if(Int32.Parse(e.ChildNodes[0].InnerText)==user.manguoidung)
+                {
+                    e.ChildNodes[1].InnerText = user.tennguoidung;
+                    e.ChildNodes[2].InnerText = user.tendangnhap;
+                    e.ChildNodes[3].InnerText = user.matkhau;
+                    e.ChildNodes[4].InnerText = user.diachi;
+                }
+            }
+            doc.Save(path);
+        }
+        public int getIdByUsername(string username)
+        {
+            int id=0;
+            XmlNodeList list = doc.SelectNodes("NguoiDung/nguoidung");
+            foreach(XmlElement e in list)
+            {
+                if (e.ChildNodes[1].InnerText.Equals(username))
+                {
+                    id = Int32.Parse(e.ChildNodes[0].InnerText);
+                }
+            }
+            return id;
         }
     }
 }
