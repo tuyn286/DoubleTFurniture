@@ -14,10 +14,10 @@
             <div class="col-md-6">
                 <form action="~/User/loginHandle">
                     <div>
-                        <input type="text"" placeholder="Tài khoản" name="username"/>
+                        <input type="text" " placeholder="Tài khoản" name="username" />
                     </div>
                     <div>
-                        <input type="password" placeholder="Mật khẩu" name="password"/>
+                        <input type="password" placeholder="Mật khẩu" name="password" />
                     </div>
                     <div class="d-flex " style="float: right;">
                         <button type="submit">
@@ -31,4 +31,7 @@
         </div>
     </div>
 </section>
-
+@if (TempData.ContainsKey("alert"))
+{
+    <script>alert('@TempData["alert"]')</script>
+}

@@ -50,13 +50,15 @@ namespace DoubleTFurniture.Controllers
                 return Redirect("~/Admin/index");
             }else if (cred.Equals("none"))
             {
-                return Redirect("~/User/Index");
+                TempData["alert"] = "Dang nhap that bai.";
+                return Redirect("~/User/loginForm");
             }
             else
             {
                 HttpCookie cookie = new HttpCookie("loginKey");
                 cookie.Value = cred;
                 Response.Cookies.Add(cookie);
+                TempData["alert"] = "Dang nhap thanh cong.";
                 return Redirect("~/User/Index");
             }
         }
@@ -76,6 +78,7 @@ namespace DoubleTFurniture.Controllers
             {
                 Response.Cookies["loginKey"].Expires = DateTime.Now.AddDays(-1);
             }
+            TempData["alert"] = "Da dang xuat.";
             return Redirect("~/User/index");
         }
 
@@ -90,6 +93,7 @@ namespace DoubleTFurniture.Controllers
         {
             string savedUsername = Request.Cookies["loginKey"]?.Value;
             cartDAO.addProduct(masp, savedUsername);
+            TempData["alert"] = "Them san pham vao gio hang thanh cong.";
             return Redirect("~/User/shop");
         }
     }

@@ -35,3 +35,8 @@
 
     </div>
 </section>
+
+@if (TempData.ContainsKey("alert"))
+{
+    <script>alert('@TempData["alert"]')</script>
+}

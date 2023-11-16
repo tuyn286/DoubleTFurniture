@@ -44,6 +44,16 @@
     <manguoidung>4</manguoidung>
     <ngaytao>12/11/2023</ngaytao>
     <giohangsanphams>
+      <giohangsanpham>
+        <maghsp>0a8f1e75-39a4-4d82-b686-d38df0504336</maghsp>
+        <masanpham>1</masanpham>
+        <magiohang>3</magiohang>
+      </giohangsanpham>
+      <giohangsanpham>
+        <maghsp>e0bf14af-dbdd-41a7-a8b1-2d445d2ff676</maghsp>
+        <masanpham>3</masanpham>
+        <magiohang>3</magiohang>
+      </giohangsanpham>
     </giohangsanphams>
   </giohang>
 </GioHangs>
