@@ -1,24 +1,106 @@
-﻿body {
+﻿/*body {
     padding-top: 50px;
     padding-bottom: 20px;
-}
+}*/
 
 /* Set padding to keep content from hitting the edges */
-.body-content {
+/*.body-content {
     padding-left: 15px;
     padding-right: 15px;
-}
+}*/
 
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
-.dl-horizontal dt {
+/*.dl-horizontal dt {
     white-space: normal;
-}
+}*/
 
 /* Set width on the form input elements since they're 100% wide by default */
-input,
+/*input,
 select,
 textarea {
     max-width: 280px;
+}*/
+a {
+    text-decoration: none;
+}
+h1, h2, h3, g4, h5, h6 {
+    text-decoration: none;
+}
+.event-1 {
+    position: absolute;
+    right: 100px;
+    animation-name: example;
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    0% {
+        top: 0px;
+    }
+
+    25% {
+        top: 200px;
+    }
+
+    75% {
+        top: 50px
+    }
+
+    100% {
+        top: 100px;
+    }
+}
+
+.event-2 {
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    animation-name: example;
+    animation: mymove_2 5s infinite;
+}
+
+@keyframes mymove_2 {
+    0% {
+        top: 100px;
+    }
+
+    25% {
+        top: 50px;
+    }
+
+    75% {
+        top: 200px
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+.himg {
+    height: 225px;
+}
+.get-border {
+    border: 2px solid #0d6efd;
+    margin-left: 50px;
+    border-radius: 2px solid black;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #0d6efd;
+}
+.seemore {
+    display: inline-block;
+    padding: 11px 34px;
+    background-color: #252525;
+    color: #ffffff;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    margin-top: 25px;
+    font-size: 23px;
+    
 }

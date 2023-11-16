@@ -3,7 +3,7 @@
     ViewBag.Title = "shop";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+<link rel="stylesheet" type="text/css" href="~/Content/Site.css" />
 <section class="brand_section">
     <div class="container">
         <div class="heading_container">
@@ -17,7 +17,7 @@
                 <div class="box">
                     <a href="~/User/details?masp=@item.masanpham">
                         <div class="img-box">
-                            <img src="~/images/@item.hinhanh" alt="">
+                            <img class="himg" src="~/images/@item.hinhanh" alt="">
                         </div>
                         <div class="detail-box">
                             <h6 class="price">

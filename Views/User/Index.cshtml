@@ -2,7 +2,7 @@
 @{
     ViewBag.Title = "Index";
 }
-
+<link rel="stylesheet" type="text/css" href="~/Content/Site.css" />
 <!-- trending section -->
 
 <section class="trending_section layout_padding">
@@ -17,22 +17,23 @@
                             </h2>
                         </div>
                         <div class="tab_container">
-                            @foreach (var item in Model.Item1) {
-                             <div class="t-link-box" aria-expanded="false" data-toggle="collapse" data-target="#collapse-@item.madanhmuc"
-                                 aria-controls="collapse-@item.madanhmuc">
-                                <div class="number">
-                                    <h5>
-                                        @item.madanhmuc
-                                    </h5>
+                            @foreach (var item in Model.Item1)
+                            {
+                                <div class="t-link-box" aria-expanded="false" data-toggle="collapse" data-target="#collapse-@item.madanhmuc"
+                                     aria-controls="collapse-@item.madanhmuc">
+                                    <div class="number">
+                                        <h5>
+                                            @item.madanhmuc
+                                        </h5>
+                                    </div>
+                                    <hr>
+                                    <div class="t-name">
+                                        <h5>
+                                            @item.tendanhmuc
+                                        </h5>
+                                    </div>
                                 </div>
-                                <hr>
-                                <div class="t-name">
-                                    <h5>
-                                        @item.tendanhmuc
-                                    </h5>
-                                </div>
-                             </div>
-                             }
+                            }
                         </div>
                     </div>
                 </div>
@@ -41,18 +42,18 @@
                         <div class="img_container ">
                             <div class="box b-1">
                                 <div class="img-box">
-                                    <img src="~/images/t-1.jpg" alt="">
+                                    <img src="~/images/ban1.jpg" alt="">
                                 </div>
                                 <div class="img-box">
-                                    <img src="~/images/t-2.jpg" alt="">
+                                    <img src="~/images/ban2.jpg" alt="">
                                 </div>
                             </div>
                             <div class="box b-2">
                                 <div class="img-box">
-                                    <img src="~/images/t-3.jpg" alt="">
+                                    <img src="~/images/ban3.jpg" alt="">
                                 </div>
                                 <div class="img-box">
-                                    <img src="~/images/t-4.jpg" alt="">
+                                    <img src="~/images/ban4.jpg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -61,19 +62,19 @@
                         <div class="img_container ">
                             <div class="box b-1">
                                 <div class="img-box">
-                                    <img src="~/images/t-3.jpg" alt="">
+                                    <img src="~/images/ghe1.jpg" alt="">
                                 </div>
                                 <div class="img-box">
-                                    <img src="~/images/t-4.jpg" alt="">
+                                    <img src="~/images/ghe2.jpg" alt="">
                                 </div>
                             </div>
                             <div class="box b-2">
 
                                 <div class="img-box">
-                                    <img src="~/images/t-1.jpg" alt="">
+                                    <img src="~/images/ghe3.jpg" alt="">
                                 </div>
                                 <div class="img-box">
-                                    <img src="~/images/t-2.jpg" alt="">
+                                    <img src="~/images/ghe4.jpg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -82,18 +83,18 @@
                         <div class="img_container ">
                             <div class="box b-1">
                                 <div class="img-box">
-                                    <img src="~/images/t-4.jpg" alt="">
+                                    <img src="~/images/sofa1.jpg" alt="">
                                 </div>
                                 <div class="img-box">
-                                    <img src="~/images/t-1.jpg" alt="">
+                                    <img src="~/images/sofa2.jpg" alt="">
                                 </div>
                             </div>
                             <div class="box b-2">
                                 <div class="img-box">
-                                    <img src="~/images/t-3.jpg" alt="">
+                                    <img src="~/images/sofa3.png" alt="">
                                 </div>
                                 <div class="img-box">
-                                    <img src="~/images/t-2.jpg" alt="">
+                                    <img src="~/images/sofa4.jpg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -102,19 +103,19 @@
                         <div class="img_container ">
                             <div class="box b-1">
                                 <div class="img-box">
-                                    <img src="~/images/t-1.jpg" alt="">
+                                    <img src="~/images/giuong1.jpg" alt="">
                                 </div>
 
                                 <div class="img-box">
-                                    <img src="~/images/t-4.jpg" alt="">
+                                    <img src="~/images/giuong2.jpg" alt="">
                                 </div>
                             </div>
                             <div class="box b-2">
                                 <div class="img-box">
-                                    <img src="~/images/t-3.jpg" alt="">
+                                    <img src="~/images/giuong3.jpg" alt="">
                                 </div>
                                 <div class="img-box">
-                                    <img src="~/images/t-2.jpg" alt="">
+                                    <img src="~/images/giuong4.jpg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -170,31 +171,37 @@
             </h2>
         </div>
         <div class="brand_container layout_padding2">
-            @foreach (var item in Model.Item2) {
-            <div class="box">
-                <a href="~/User/details?masp=@item.masanpham">
-                    <div class="img-box">
-                        <img src="~/images/@item.hinhanh" alt="">
-                    </div>
-                    <div class="detail-box">
-                        <h6 class="price">
-                            $@item.gia
-                        </h6>
-                        <h6>
-                            @item.tensanpham
-                        </h6>
-                    </div>
-                </a>
-            </div>
+            @foreach (var item in Model.Item2)
+            {
+                <div class="box">
+                    <a href="~/User/details?masp=@item.masanpham">
+                        <div class="img-box">
+                            <img class="himg" src="~/images/@item.hinhanh" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h6 class="price">
+                                $@item.gia
+                            </h6>
+                            <h6>
+                                @item.tensanpham
+                            </h6>
+                        </div>
+                    </a>
+                </div>
                 if (item.masanpham == 4)
                 {
                     break;
                 }
             }
         </div>
-        
+        <a class="seemore" href="~/User/shop">
+            See more
+        </a>
+
     </div>
 </section>
-@if (TempData.ContainsKey("alert")) {
-<script>alert('@TempData["alert"]')</script>}
+@if (TempData.ContainsKey("alert"))
+{
+    <script>alert('@TempData["alert"]')</script>
+}
 <!-- end brand section -->

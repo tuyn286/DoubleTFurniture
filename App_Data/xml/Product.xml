@@ -2,112 +2,162 @@
 <Product>
 	<sanpham>
 		<masanpham>1</masanpham>
-		<tensanpham>Ban tron</tensanpham>
-		<mota>Cho 2 nguoi ngoi</mota>
+		<tensanpham>Bàn Chữ Nhật</tensanpham>
+		<mota>Đẹp gọn giá rẻ</mota>
 		<gia>1500000</gia>
 		<mau>Do Den</mau>
 		<chatlieu>Go tu nhien</chatlieu>
-		<hinhanh>t-2.jpg</hinhanh>
+		<hinhanh>ban1.jpg</hinhanh>
 		<madanhmuc>1</madanhmuc>
 	</sanpham>
   <sanpham>
     <masanpham>2</masanpham>
-    <tensanpham>Ban tron</tensanpham>
-    <mota>Cho 2 nguoi ngoi</mota>
+    <tensanpham>Ghế Xoay</tensanpham>
+    <mota>Tốt cho sức khỏe thoải mái trong công việc</mota>
     <gia>1500000</gia>
     <mau>Do Den</mau>
     <chatlieu>Go tu nhien</chatlieu>
-    <hinhanh>t-2.jpg</hinhanh>
+    <hinhanh>ghe1.jpg</hinhanh>
     <madanhmuc>1</madanhmuc>
   </sanpham>
   <sanpham>
     <masanpham>3</masanpham>
-    <tensanpham>Ban tron</tensanpham>
-    <mota>Cho 2 nguoi ngoi</mota>
+    <tensanpham>Sofa loại 1</tensanpham>
+    <mota>Màu đẹp gọn phù hợp cho phòng khách</mota>
     <gia>1500000</gia>
     <mau>Do Den</mau>
     <chatlieu>Go tu nhien</chatlieu>
-    <hinhanh>t-3.jpg</hinhanh>
+    <hinhanh>sofa1.jpg</hinhanh>
     <madanhmuc>1</madanhmuc>
   </sanpham>
   <sanpham>
     <masanpham>4</masanpham>
-    <tensanpham>Ban tron</tensanpham>
-    <mota>Cho 2 nguoi ngoi</mota>
+    <tensanpham>Giường Nệm</tensanpham>
+    <mota>Đẹp sang trọng</mota>
     <gia>1500000</gia>
     <mau>Do Den</mau>
     <chatlieu>Go tu nhien</chatlieu>
-    <hinhanh>t-3.jpg</hinhanh>
+    <hinhanh>giuong1.jpg</hinhanh>
     <madanhmuc>1</madanhmuc>
   </sanpham>
   <sanpham>
     <masanpham>5</masanpham>
-    <tensanpham>Ban tron</tensanpham>
-    <mota>Cho 2 nguoi ngoi</mota>
+    <tensanpham>Bàn Ăn</tensanpham>
+    <mota>Tiện gọn , dùng để ăn cơm</mota>
     <gia>1500000</gia>
     <mau>Do Den</mau>
     <chatlieu>Go tu nhien</chatlieu>
-    <hinhanh>t-3.jpg</hinhanh>
+    <hinhanh>ban2.jpg</hinhanh>
     <madanhmuc>1</madanhmuc>
   </sanpham>
   <sanpham>
     <masanpham>6</masanpham>
-    <tensanpham>Bàn gỗ tứ linh </tensanpham>
-    <mota>Thích hợp để uống trà</mota>
+    <tensanpham>Ghế Nhựa </tensanpham>
+    <mota>Gọn nhẹ rẻ tiền</mota>
     <gia>500000000</gia>
     <mau>Nâu</mau>
     <chatlieu>Gỗ thiên nhiên</chatlieu>
-    <hinhanh>i-2.jpg</hinhanh>
+    <hinhanh>ghe2.jpg</hinhanh>
     <madanhmuc>2</madanhmuc>
   </sanpham>
   <sanpham>
     <masanpham>7</masanpham>
-    <tensanpham>Ban tron</tensanpham>
-    <mota>Cho 2 nguoi ngoi</mota>
+    <tensanpham>Sofa Loại 2</tensanpham>
+    <mota>Đẹp bền kiểu dáng hiện đại</mota>
     <gia>1500000</gia>
     <mau>Do Den</mau>
     <chatlieu>Go tu nhien</chatlieu>
-    <hinhanh>i-2.jpg</hinhanh>
+    <hinhanh>sofa2.jpg</hinhanh>
     <madanhmuc>1</madanhmuc>
   </sanpham>
 	<sanpham>
 		<masanpham>8</masanpham>
-		<tensanpham>Ban tron</tensanpham>
-		<mota>Cho 2 nguoi ngoi</mota>
+		<tensanpham>Giường Gỗ</tensanpham>
+		<mota>Đơn giản rẻ tiền</mota>
 		<gia>1500000</gia>
 		<mau>Do Den</mau>
 		<chatlieu>Go tu nhien</chatlieu>
-		<hinhanh>i-2.jpg</hinhanh>
+		<hinhanh>giuong2.jpg</hinhanh>
 		<madanhmuc>1</madanhmuc>
 	</sanpham>
 	<sanpham>
 		<masanpham>9</masanpham>
-		<tensanpham>Ban tron</tensanpham>
-		<mota>Cho 2 nguoi ngoi</mota>
+		<tensanpham>Bàn Nhậu</tensanpham>
+		<mota>Nhỏ gọn phù hợp để nhậu </mota>
 		<gia>1500000</gia>
 		<mau>Do Den</mau>
 		<chatlieu>Go tu nhien</chatlieu>
-		<hinhanh>i-2.jpg</hinhanh>
+		<hinhanh>ban3.jpg</hinhanh>
 		<madanhmuc>1</madanhmuc>
 	</sanpham>
 	<sanpham>
 		<masanpham>10</masanpham>
-		<tensanpham>Ban tron</tensanpham>
-		<mota>Cho 2 nguoi ngoi</mota>
+		<tensanpham>Ghế Gỗ </tensanpham>
+		<mota>Thích hợp để uống trà</mota>
 		<gia>1500000</gia>
 		<mau>Do Den</mau>
 		<chatlieu>Go tu nhien</chatlieu>
-		<hinhanh>i-2.jpg</hinhanh>
+		<hinhanh>ghe3.jpg</hinhanh>
 		<madanhmuc>1</madanhmuc>
 	</sanpham>
 	<sanpham>
 		<masanpham>11</masanpham>
-		<tensanpham>Ban tron</tensanpham>
-		<mota>Cho 2 nguoi ngoi</mota>
+		<tensanpham>Sofa Loại 3</tensanpham>
+		<mota>Sang trọng quý phái </mota>
 		<gia>1500000</gia>
 		<mau>Do Den</mau>
 		<chatlieu>Go tu nhien</chatlieu>
-		<hinhanh>i-2.jpg</hinhanh>
+		<hinhanh>sofa3.jpg</hinhanh>
 		<madanhmuc>1</madanhmuc>
 	</sanpham>
+  <sanpham>
+    <masanpham>12</masanpham>
+    <tensanpham>Giường Hoàng Gia</tensanpham>
+    <mota>Đẳng cấp sang trọng</mota>
+    <gia>1500000</gia>
+    <mau>Do Den</mau>
+    <chatlieu>Go tu nhien</chatlieu>
+    <hinhanh>giuong3.jpg</hinhanh>
+    <madanhmuc>1</madanhmuc>
+  </sanpham>
+  <sanpham>
+    <masanpham>13</masanpham>
+    <tensanpham>Bàn Làm Việc</tensanpham>
+    <mota>Đơn giản rộng rãi đẹp</mota>
+    <gia>1500000</gia>
+    <mau>Do Den</mau>
+    <chatlieu>Go tu nhien</chatlieu>
+    <hinhanh>ban4.jpg</hinhanh>
+    <madanhmuc>1</madanhmuc>
+  </sanpham>
+  <sanpham>
+    <masanpham>14</masanpham>
+    <tensanpham>Ghế Tình yêu</tensanpham>
+    <mota>........</mota>
+    <gia>1500000</gia>
+    <mau>Do Den</mau>
+    <chatlieu>Go tu nhien</chatlieu>
+    <hinhanh>ghe4.jpg</hinhanh>
+    <madanhmuc>1</madanhmuc>
+  </sanpham>
+  <sanpham>
+    <masanpham>15</masanpham>
+    <tensanpham>Sofa Loại 4</tensanpham>
+    <mota>Đơn giản nhỏ gọn phù hợp cho hai người </mota>
+    <gia>1500000</gia>
+    <mau>Do Den</mau>
+    <chatlieu>Go tu nhien</chatlieu>
+    <hinhanh>sofa4.jpg</hinhanh>
+    <madanhmuc>1</madanhmuc>
+  </sanpham>
+  <sanpham>
+    <masanpham>16</masanpham>
+    <tensanpham>Giường Tầng</tensanpham>
+    <mota>Nhỏ gọn dùng cho những phòng có kích thước nhỏ </mota>
+    <gia>1500000</gia>
+    <mau>Do Den</mau>
+    <chatlieu>Go tu nhien</chatlieu>
+    <hinhanh>giuong4.jpg</hinhanh>
+    <madanhmuc>1</madanhmuc>
+  </sanpham>
 </Product>
