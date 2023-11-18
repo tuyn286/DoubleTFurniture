@@ -85,16 +85,23 @@ namespace DoubleTFurniture.Controllers
         public ActionResult deleteProCart(int masp)
         {
             string savedUsername = Request.Cookies["loginKey"]?.Value;
-            cartDAO.deleteProduct(masp, savedUsername);
-            return Redirect("~/User/cart");
+                cartDAO.deleteProduct(masp, savedUsername);
+                return Redirect("~/User/cart");
         }
 
         public ActionResult addProCart(int masp)
         {
             string savedUsername = Request.Cookies["loginKey"]?.Value;
-            cartDAO.addProduct(masp, savedUsername);
-            TempData["alert"] = "Them san pham vao gio hang thanh cong.";
-            return Redirect("~/User/shop");
+            if (savedUsername == null)
+            {
+                return Redirect("~/User/loginForm");
+            }
+            else
+            {
+                cartDAO.addProduct(masp, savedUsername);
+                TempData["alert"] = "Them san pham vao gio hang thanh cong.";
+                return Redirect("~/User/shop");
+            }
         }
     }
 }

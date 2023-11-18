@@ -117,6 +117,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\AuthFIilter.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -170,12 +171,20 @@
     <Content Include="images\about-img.png" />
     <Content Include="images\arrow-green.png" />
     <Content Include="images\arrow.png" />
+    <Content Include="images\ba-1.jpg" />
+    <Content Include="images\ba-2.jpg" />
+    <Content Include="images\ba-3.jpg" />
+    <Content Include="images\ba-4.jpg" />
     <Content Include="images\client-1.png" />
     <Content Include="images\client-2.png" />
     <Content Include="images\dbt_logo.png" />
     <Content Include="images\discount-img.png" />
     <Content Include="images\envelope-white.png" />
     <Content Include="images\fb.png" />
+    <Content Include="images\g1.jpg" />
+    <Content Include="images\g2.jpg" />
+    <Content Include="images\g3.jpg" />
+    <Content Include="images\g4.jpg" />
     <Content Include="images\hero-bg.jpg" />
     <Content Include="images\hero-side-bg.png" />
     <Content Include="images\i-1.jpg" />
@@ -191,10 +200,18 @@
     <Content Include="images\logo_2t.png" />
     <Content Include="images\mail.png" />
     <Content Include="images\menu.png" />
+    <Content Include="images\n1.jpg" />
+    <Content Include="images\n2.jpg" />
+    <Content Include="images\n3.jpg" />
+    <Content Include="images\n4.jpg" />
     <Content Include="images\phone.png" />
     <Content Include="images\play.png" />
     <Content Include="images\search-icon.png" />
     <Content Include="images\slider-img.png" />
+    <Content Include="images\sofa-1.jpg" />
+    <Content Include="images\sofa-2.png" />
+    <Content Include="images\sofa-3.jpg" />
+    <Content Include="images\sofa-4.jpg" />
     <Content Include="images\t-1.jpg" />
     <Content Include="images\t-2.jpg" />
     <Content Include="images\t-3.jpg" />
